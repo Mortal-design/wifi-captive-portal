@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to Guest Wi-Fi</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-    .button { background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; font-size: 16px; border-radius: 5px; text-decoration: none; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Fi Captive Portal</title>
 </head>
 <body>
-  <h1>Welcome to Our Guest Wi-Fi</h1>
-  <p>Please click the button below to gain access.</p>
-  <a href="https://google.com" class="button">Get Internet Access</a>
+    <h1>Welcome to Free Wi-Fi</h1>
+    <p>Please click the button below to connect.</p>
+    
+    <button id="connectButton">Connect to Wi-Fi</button>
+
+    <script>
+        document.getElementById('connectButton').onclick = function() {
+            // Redirect the user to enable internet access
+            window.location.href = "http://router.ip.address";
+        };
+    </script>
 </body>
 </html>
